@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* --------------------------------------------- */
+/* Reusable pieces */
+/* --------------------------------------------- */
+
+.column-one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+}
+
+
+.column-two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.column-two-caption {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.column-three-caption {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.year {
+    font-size: 4rem;
+    align-self: center;
+}
+
+.left-side-year {
+    padding-right: 3%;
+    justify-self: end;
+    grid-column: 2 / 3;
+}
+
+.right-side-year {
+    padding-left: 3%;
+    justify-self: start;
+}
+
+.column-three {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+.column-four {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.column-four-image {
+    justify-self: center;
+    align-self: center;
+}
+
+.column-four-caption {
+    justify-self: center;
+    align-self: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.section-marker-left {
+    width: 25%;
+    height: 1%;
+    grid-column: 1 / 3;
+    align-self: end;
+    justify-self: end;
+}
+
+.section-marker-right {
+    background: black;
+    width: 25%;
+    height: 1%;
+    grid-column: 4 / 6;
+    align-self: end;
+    justify-self: start;
+}
+
+/* .bottom-shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.755);
+    width: 100%;
+}
+
+.top-shadow {
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.755);
+    width: 100%;
+} */
+
+/* ------------------------------------------------ */
+/* Beginning of main body styling */
+/* ------------------------------------------------ */
+
+#header {
+    display: grid;
+}
+
+
+#header-pic {
+    width: 30%;
+    height: auto;
+    justify-self: center;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+#header-text {
+    display: grid
+}
+
+#header-text p {
+    justify-self: center;
+    padding: 5px;
+}
+
+hr {
+    margin: 10px 30px;
+
+}
+
+.nujabes-logo {
+    display: grid;
+}
+
+.nujabes-logo img {
+    justify-self: center;
+    width: 10%;
+    padding: 20px 0;
+}
+
+#timeline-intro {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#timeline-intro h2 {
+    /* top: 80%; */
+    font-size: 3.0rem;
+    justify-self: center;
+}
+
+#timeline-intro p {
+    border-bottom: 2px solid black;
+}
+
+
+#timeline-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2px 1fr 1fr;
+    grid-template-rows: repeat(24, 1fr);
+    background-color: white;
+}
+
+.middle-line {
+    background: black;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 25;
+    height: 100%;
+}
+
+
+#section-one-start-left {
+    background: #8dbbd0;
+    grid-row: 1 / 2;
+}
+
+#section-one-start-right {
+    background: #8dbbd0;
+    grid-row: 1 / 2;
+}
+
+
+#year-1998 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+
+#hydeout-productions {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#hp-caption {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 0 3%;
+}
+
+
+
+#sweet-sticky-thing {
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4; */
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#sweet-sticky-thing-caption {
+    grid-row: 4 / 5;
+    padding: 0 3%;
+}
+
+#year-1999 {
+    grid-row: 3 / 4;
+}
+
+#Jun-Substantial-Caption {
+    grid-column: 4 / 5;
+    grid-row : 2 / 3;
+    padding: 0 3%;
+}
+
+#Jun-Substantial {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+#Jun-Substantial img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+#curry-spot {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+}
+
+#curry-spot img {
+    max-width: 100%;
+}
+
+#FunkyDL {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+
+}
+
+#FunkyDL img {
+    max-width: 100%;
+    justify-self: center;
+}
+
+#FunkyDL-caption {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    padding: 0 3%;
+}
+
+
+#section-one-end-left {
+    background: #8dbbd0;
+    grid-row: 4 / 5;
+}
+
+#section-one-end-right {
+    background: #8dbbd0;
+    grid-row: 4 / 5;
+}
+
+/* ------------------------------------------------ */
+
+#section-two-start-left {
+    background: #eabf13dd;
+    grid-row: 5 / 6;
+}
+
+#section-two-start-right {
+    background: #eabf13dd;
+    grid-row: 5 / 6;
+}
+
+
+
+#luvSic-one {
+    grid-row: 7 / 8;
+}
+
+#year-2001 {
+    grid-row: 7 / 8;
+}
+
+#year-2002 {
+    grid-row: 7 / 8;
+}
+
+#ristorante-mixtape {
+    grid-row: 6 / 7;
+    align-self: center;
+}
+
+#ristorante-mixtape img {
+    max-width: 100%;
+}
+
+#ristorante-mixtape-caption {
+    grid-row: 6 / 7;
+    padding: 0 3%;
+}
+
+#luvSic-two {
+    grid-row: 8 / 9;
+    justify-self: center;
+    align-self: center;
+}
+
+#luvSic-two img {
+    max-width: 100%;
+}
+
+#luvSic-two-caption {
+    grid-row: 8 / 9;
+    padding: 0 3%;
+}
+
+#section-two-end-left {
+    background: #eabf13dd;
+    grid-row: 8 / 9;
+}
+
+#section-two-end-right {
+    background: #eabf13dd;
+    grid-row: 8 / 9;
+}
+/* ------------------------------------------------ */
+
+#section-three-start-left {
+    background: #9b1814;
+    grid-row: 9 / 10;
+}
+
+#section-three-start-right {
+    background: #9b1814;
+    grid-row: 9 / 10;
+}
+
+#year-2003 {
+    grid-row: 11 / 12;
+}
+
+#year-2004 {
+    grid-row: 11 / 12;
+}
+
+
+#hydeout-productions-one {
+    grid-row: 10 / 11;
+}
+
+#hydeout-two-caption {
+    grid-row: 10 / 11;
+    padding: 0 3%;
+}
+
+#metaphorical-music {
+    grid-row: 12 / 13;
+}
+
+#metaphorical-music-caption {
+    grid-row: 12 / 13;
+    padding: 0 3%;
+}
+
+#samurai-champloo-cast {
+    grid-row: 10 / 11;
+    align-self: center;
+}
+
+#samurai-champloo-vinyl {
+    grid-row: 10 / 11;
+    justify-self: center;
+    align-self: center;
+}
+
+#samurai-champloo-caption {
+    grid-row: 11 / 12;
+    padding: 0 3%;
+}
+
+#departure-album {
+    grid-row: 12 / 13;
+
+}
+
+#impression-album {
+    grid-row: 12 / 13;
+}
+
+#section-three-end-left {
+    background: #9b1814;
+    grid-row: 12 / 13;
+}
+
+#section-three-end-right {
+    background: #9b1814;
+    grid-row: 12 / 13;
+}
+
+/* ------------------------------------------------ */
+
+#section-four-start-left {
+    background: #eabf13dd;
+    grid-row: 13 / 14;
+}
+
+#section-four-start-right {
+    background: #eabf13dd;
+    grid-row: 13 / 14;
+}
+
+#year-2005 {
+    grid-row: 15 / 16;
+}
+
+#year-2007 {
+    grid-row: 15 / 16;
+}
+
+#modal-soul {
+    grid-row: 14 / 15;
+}
+
+#modal-soul-caption {
+    grid-row: 14 / 15;
+    padding: 0 3%;
+}
+
+#luvSic-three {
+    grid-row: 16 / 17;
+}
+
+#luvSic-three-caption {
+    grid-row: 16 / 17;
+    padding: 0 3%;
+}
+
+#hydeout-productions-two {
+    grid-row: 15 / 16;
+}
+
+#hydeout-productions-two p {
+    padding: 0 10px;
+}
+
+#section-four-end-left {
+    background: #eabf13dd;
+    grid-row: 16 / 17;
+}
+
+#section-four-end-right {
+    background: #eabf13dd;
+    grid-row: 16 / 17;
+}
+
+
+/* ------------------------------------------------ */
+
+#section-five-start-left {
+    background: #8dbbd0;
+    grid-row: 17 / 18;
+}
+
+#section-five-start-right {
+    background: #8dbbd0;
+    grid-row: 17 / 18;
+}
+
+
+#year-2010 {
+    grid-row: 19 / 20;
+}
+
+#year-2011 {
+    grid-row: 19 / 20;
+}
+
+#caption-2010 {
+    grid-row: 19 / 20;
+    padding: 0 3%;
+}
+
+#spiritual-state {
+    grid-row: 18 / 19;
+    align-self: center;
+}
+
+#spiritual-state-caption {
+    grid-row: 18/ 19;
+    padding: 0 5%;
+}
+
+#luvSic-four {
+    grid-row: 20 / 21;
+    align-self: center;
+    justify-self: center;
+}
+
+#luvSic-four-caption {
+    grid-row: 20 / 21;
+    padding: 0 3%;
+}
+
+#section-five-end-left {
+    background: #8dbbd0;
+    grid-row: 20 / 21;
+}
+
+#section-five-end-right {
+    background: #8dbbd0;
+    grid-row: 20 / 21;
+}
+
+/* ------------------------------------------------ */
+
+#section-six-start-left {
+    background: #eabf13dd;
+    grid-row: 21 / 22;
+}
+
+#section-six-start-right {
+    background: #eabf13dd;
+    grid-row: 21 / 22;
+}
+
+#year-2012 {
+    grid-row: 22 / 23;
+}
+
+#year-2013 {
+    grid-row: 22 / 23;
+}
+
+#luvSic-five {
+    grid-row: 22 / 23;
+}
+
+#luvSic-five p {
+    padding: 0 3%;
+}
+
+#luvSic-six {
+    grid-row: 22 / 23;
+}
+
+#luvSic-six p {
+    padding: 0 3%;
+}
+
+#section-six-end-left {
+    background: #eabf13dd;
+    grid-row: 22 / 23;
+}
+
+#section-six-end-right {
+    background: #eabf13dd;
+    grid-row: 22 / 23;
+}
+
+/* ------------------------------------------------ */
+
+#timeline-conclusion {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+
+}
+
+#timeline-conclusion h3 {
+    /* font-size: 3.0rem; */
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+#press-play {
+    grid-column: 2 / 3;
+    justify-self: center;
+}
+
+#rest-in-peace {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+#source {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: end;
+}

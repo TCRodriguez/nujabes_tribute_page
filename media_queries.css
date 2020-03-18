@@ -1,0 +1,287 @@
+
+/* Desktops and Laptops */
+
+@media only screen and (max-width: 1920px) {
+    body { font-size: 1rem;}
+
+    /* h3 { font-size: 1rem;} */
+}
+
+@media only screen and (max-width: 1366px) {
+    body {font-size: .85rem;}
+    h2 {font-size: 4rem;}
+}
+
+@media only screen and (max-width: 1280px) {
+    /* Good as of 03/14/20 */
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body { font-size: .75rem}
+    /* h3 { font-size: .25rem} */
+    h2 { font-size: 3rem;}
+}
+
+/* Devices */
+
+@media only screen and (max-width: 768px) {
+    body { font-size: .65rem;}
+}
+
+@media only screen and (max-width: 480px) {
+    h2 { font-size: 2rem;}
+}
+
+@media only screen and (max-width: 320px) {
+
+    /* #timeline-body {
+        display: grid;
+        grid-template-columns: 1fr;
+    } */
+
+    #header-pic {
+        width: 60%;
+    }
+
+
+
+    #tribute-info {
+        padding: 0 90%;
+    }
+
+    #hydeout-productions {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+    
+    
+    #hp-caption {
+        grid-column: 1 / span 2;
+        /* align-self: end; */
+        margin-top: 40px;
+        padding: 0 0;
+    }
+
+    #Jun-Substantial {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+
+    #Jun-Substantial-Caption {
+        grid-column: 4 / span 2;
+        padding-right: 20px;
+        margin-bottom: 60px;
+    }
+
+
+
+
+
+    #curry-spot {
+        grid-column: 4 / span 2;
+    }
+
+    #curry-spot p {
+        margin-top: 45px;
+        padding-right: 40px;
+    }
+
+
+
+
+
+    #sweet-sticky-thing {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    #sweet-sticky-thing-caption {
+        grid-column: 1 / span 2;
+        margin-bottom: 5px;
+    }
+
+    #FunkyDL {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+
+    #FunkyDL-caption {
+        grid-column: 4 / span 2;
+        align-self: center;
+        margin-top: 60px;
+        padding: 0 5%;
+    }
+
+    #luvSic-one {
+        grid-column: 1 / span 2;
+        grid-row: 6 / 7;
+        align-self: start;
+    }
+
+    #luvSic-one p {
+        margin-top: 5px;
+    }
+    
+    
+    #ristorante-mixtape {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+    
+    #ristorante-mixtape-caption {
+        grid-column: 4 / span 2;
+        margin-top: 80px;
+    }
+    
+    #luvSic-two {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+    
+    #luvSic-two-caption {
+        grid-column: 4 / span 2;
+        margin-top: 80px;
+        padding: 0 5%;
+    }
+
+
+    #hydeout-productions-one {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+
+    #hydeout-two-caption {
+        grid-column: 1 / span 2;
+        align-self: end;
+        margin-bottom: 60px;
+    }
+
+    #metaphorical-music {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    #metaphorical-music-caption {
+        grid-column: 1 / span 2;
+        align-self: end;
+        margin-bottom: 70px;
+    }
+
+
+
+
+    #samurai-champloo-vinyl {
+        align-self: start;
+        grid-column: 4 / span 2;
+    }
+
+    #samurai-champloo-cast {
+        grid-column: 4 / span 2;
+    }
+
+    #samurai-champloo-caption {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+
+    #year-2004 {
+        margin-top: 70px;
+    }
+
+
+    #departure-album {
+        grid-column: 4 / span 2;
+        max-width: 90%;
+    }
+
+    #impression-album {
+        grid-column: 4 / span 2;
+        align-self: end;
+        max-width: 90%;
+    }
+
+
+    #modal-soul {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    #modal-soul-caption {
+        grid-column: 1 / span 2;
+        align-self: end;
+        margin-bottom: 40px;
+    }
+
+    #luvSic-three {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    #luvSic-three-caption {
+        grid-column: 1 / span 2;
+        align-self: center;
+        margin-top: 70px;
+    }
+
+    #hydeout-productions-two {
+        grid-column: 4 / span 2;
+        grid-row: 14 / 15;
+    }
+
+
+
+    #spiritual-state {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+
+    #spiritual-state-caption {
+        grid-column: 4 / span 2;
+        align-self: end;
+        margin-bottom: 10px;
+    }
+
+
+
+    #luvSic-four {
+        grid-column: 4 / span 2;
+        align-self: start;
+    }
+
+    #luvSic-four-caption {
+        grid-column: 4 / span 2;
+        align-self: end;
+        margin-bottom: 85px;
+    }
+
+
+    #luvSic-five {
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    #luvSic-five p {
+        margin-top: 2px;
+    }
+
+    #year-2012 {
+        /* margin-top: 170px; */
+        align-self: end;
+    }
+
+    #luvSic-six {
+        grid-column: 4 / span 2;
+    }
+
+    #year-2013 {
+        align-self: end;
+    }
+
+
+}
+
+
+
+
