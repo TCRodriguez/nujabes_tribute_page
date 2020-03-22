@@ -107,15 +107,6 @@ img {
     justify-self: start;
 }
 
-/* .bottom-shadow {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.755);
-    width: 100%;
-}
-
-.top-shadow {
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.755);
-    width: 100%;
-} */
 
 /* ------------------------------------------------ */
 /* Beginning of main body styling */
@@ -194,6 +185,7 @@ hr {
     height: 100%;
 }
 
+/* Years 1998 and 1999 */
 
 #section-one-start-left {
     background: #8dbbd0;
@@ -298,7 +290,7 @@ hr {
     grid-row: 4 / 5;
 }
 
-/* ------------------------------------------------ */
+/* ------------------Years 2001 and 2002------------------------------ */
 
 #section-two-start-left {
     background: #eabf13dd;
@@ -362,7 +354,7 @@ hr {
     background: #eabf13dd;
     grid-row: 8 / 9;
 }
-/* ------------------------------------------------ */
+/* ------------------Years 2003 and 2004------------------------------ */
 
 #section-three-start-left {
     background: #9b1814;
@@ -436,7 +428,7 @@ hr {
     grid-row: 12 / 13;
 }
 
-/* ------------------------------------------------ */
+/* -------------------Years 2005 and 2007----------------------------- */
 
 #section-four-start-left {
     background: #eabf13dd;
@@ -493,7 +485,7 @@ hr {
 }
 
 
-/* ------------------------------------------------ */
+/* ------------------Years 2010 and 2011------------------------------ */
 
 #section-five-start-left {
     background: #8dbbd0;
@@ -550,7 +542,7 @@ hr {
     grid-row: 20 / 21;
 }
 
-/* ------------------------------------------------ */
+/* ------------------Years 2012 and 2013------------------------------ */
 
 #section-six-start-left {
     background: #eabf13dd;
@@ -596,7 +588,7 @@ hr {
     grid-row: 22 / 23;
 }
 
-/* ------------------------------------------------ */
+/* -----------------Conclusion------------------------------- */
 
 #timeline-conclusion {
     display: grid;
